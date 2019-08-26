@@ -4,8 +4,9 @@ public class 引用和传值 {
 
 	public static void main(String[] args) {
 		//testvalue();//传值
-		testref();//传引用
+		//testref();//传引用
 		//testref2();//传引用
+		testExample();//15 0 20
 	}
 	
 	private static void test1(boolean test){
@@ -50,5 +51,33 @@ public class 引用和传值 {
 		test3(string);
 		System.out.println(string);//hello
 	}
+	
+	/**
+	 * 美国某著名软件公司面试题2009
+	 */
+	public static void testExample(){
+		first();
+	}
+
+	private static void first() {
+		int i=5;
+		Value v=new Value();
+		v.i=25;
+		second(v,i);
+		System.out.println(v.i);
+	}
+
+	private static void second(Value v, int i) {
+		i=0;
+		v.i=20;//通过副本引用改变了值
+		Value val=new Value();
+		v=val;//副本引用指向了新的值，但是原本的v.i=20不变
+		System.out.println(v.i+" "+i);
+	}
 
 }
+
+class Value{
+	public int i=15;
+}
+
