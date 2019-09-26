@@ -19,7 +19,7 @@ public class 读取Properties配置文件 {
 		System.out.println("读取配置文件["+file.getAbsolutePath()+"]信息："+className);
 	}
 
-	public String readProperties(File file) throws FileNotFoundException, IOException {
+	private String readProperties(File file) throws FileNotFoundException, IOException {
 		InputStream inputStream=new FileInputStream(file);
 		//加载配置文件
 		Properties properties=new Properties();
