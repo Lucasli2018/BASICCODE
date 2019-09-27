@@ -8,22 +8,22 @@ public class ClientTest {
 	public void test01() {
 		//适配者
 		Adaptee adaptee=new Adaptee();
-		//适配器
+		//目标
 		Target target=new Adapter(adaptee);
 		//客户端
-		Client client=new Client(target);
+		Client client=new Client();
 		
-		client.test1();
+		client.test1(target);
 	}
 	
 	@Test
 	public void test02() {
-		//适配器
+		//目标
 		Target target=new Adapter2();
 		//客户端
-		Client client=new Client(target);
+		Client client=new Client();
 		
-		client.test1();
+		client.test1(target);
 	}
 
 }

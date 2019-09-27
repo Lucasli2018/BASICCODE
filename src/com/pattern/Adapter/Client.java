@@ -2,12 +2,8 @@ package com.pattern.Adapter;
 
 public class Client {
 	Target target;
-	public void test1(){
+	public void test1(Target target){
 		target.handleReq();
-	}
-	public Client(Target target) {
-		super();
-		this.target = target;
 	}
 	
 }
