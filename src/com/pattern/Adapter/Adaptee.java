@@ -1,4 +1,4 @@
-package com.pattern.Adapter;
+package com.pattern.adapter;
 
 /**
  * 适配者（相当于ps2接口的键盘）

@@ -1,4 +1,4 @@
-package com.pattern.Adapter;
+package com.pattern.adapter;
 
 import org.junit.Test;
 

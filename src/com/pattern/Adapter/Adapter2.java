@@ -1,4 +1,4 @@
-package com.pattern.Adapter;
+package com.pattern.adapter;
 
 /**
  * 适配器（相当于转接头）

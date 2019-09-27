@@ -1,4 +1,4 @@
-package com.pattern.Adapter;
+package com.pattern.adapter;
 
 /**
  * 目标对象（相当于usb接口）
